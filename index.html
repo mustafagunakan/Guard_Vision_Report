@@ -66,15 +66,15 @@
 </head>
 <body>
     <header>
-            <h1>Guard Vision: Smarter AI for Theft Detection</h1>
-            <p>Redefining Front-Door AI Surveillance</p>
+        <h1>Guard Vision: Smarter AI for Theft Detection</h1>
+        <p>Redefining Front-Door AI Surveillance</p>
     </header>
     <main>
         <section>
             <h2>1. Project Overview</h2>
             <p><strong>Title:</strong> Guard Vision: Redefining Front-Door AI Surveillance</p>
             <p><strong>Objective:</strong> Develop an AI model capable of accurately detecting potential theft incidents in gardens and front doors, reducing irrelevant notifications and enhancing user trust.</p>
-            <p><strong>Problem Statement:</strong> The problem statement and added value should be written here.</p>
+            <p><strong>Problem Statement:</strong> Current security camera systems rely heavily on motion detection, leading to frequent false alerts that reduce user trust and effectiveness. Despite advancements in AI, the market lacks accessible, intelligent theft detection solutions that process visual data efficiently and deliver accurate, context-aware alerts.</p>
             <p><strong>Team Composition:</strong></p>
             <ul>
                 <li>Team Lead</li>
@@ -84,7 +84,8 @@
             </ul>
             <p><strong>Outcome:</strong> An educational and experimental project designed to address a significant market gap in home security solutions while enhancing team collaboration and technical expertise.</p>
             <div class="visuals">
-                <p>Couple of visuals to be added here</p>
+                <p>(Image will be placed here)</p>
+                <p>Caption: Algorithm detecting a possible theft situation and sending alert messages to the user.</p>
             </div>
         </section>
 
@@ -93,98 +94,96 @@
             <p><strong>Research Phase:</strong> The team evaluated several AI detection models based on visual data to identify the most suitable option.</p>
             <p><strong>Models Tested and Member Contributions:</strong></p>
             <ul>
-                <li><strong>Model A:</strong> [Member 1’s Task: Testing accuracy under low-light conditions. Findings: High false positives.]</li>
-                <li><strong>Model B:</strong> [Member 2’s Task: Benchmarking against existing systems. Findings: Low inference speed.]</li>
-                <li><strong>Model C:</strong> [Group Task: Analysis of scalability. Findings: Moderate resource efficiency.]</li>
-                <li><strong>Model D:</strong> [Member 3’s Task: Tracking integration tests. Findings: Best accuracy-speed balance.]</li>
-                <li><strong>Model E:</strong> [Member 4’s Task: Real-time detection testing. Findings: Low precision.]</li>
-                <li><strong>Model F:</strong> [Group Task: False positive reduction strategies. Findings: Good accuracy but costly resource usage.]</li>
-                <li><strong>Model G:</strong> [Member 5’s Task: Outdoor performance analysis. Findings: High variability in results.]</li>
+                <li>DETR</li>
+                <li>DINO-R50</li>
+                <li>DINO-SwinL</li>
+                <li>YOLOv3/v5/v11</li>
+                <li>Faster R-CNN</li>
+                <li>ATSS</li>
+                <li>RetinaNET</li>
             </ul>
-            <p><strong>Evaluation Metrics:</strong> Speed, Accuracy, Efficiency.</p>
-            <p><strong>Team Dynamics:</strong> Collaborative reviews during group discussions allowed members to share insights and refine the evaluation process.</p>
+            <p><strong>Evaluation Metrics:</strong> Speed, Accuracy, and Efficiency.</p>
+            <p><strong>Team Dynamics:</strong> Collaborative reviews and documentation cycles ensured alignment and integration of findings.</p>
         </section>
 
         <section>
             <h2>3. Model Selection and Integration</h2>
-            <p><strong>Chosen Model:</strong> Model D (e.g., YOLOv11)</p>
-            <p><strong>Reason for Selection:</strong> Best balance between speed, accuracy, and efficiency.</p>
+            <p><strong>Chosen Model:</strong> YOLOv11</p>
+            <p><strong>Reason for Selection:</strong> Best balance between speed, accuracy, and efficiency for real-time detection.</p>
             <p><strong>Tracking System Integration:</strong></p>
             <ul>
-                <li>Algorithm X</li>
-                <li>Algorithm Y</li>
-                <li>Algorithm Z</li>
+                <li>SORT</li>
+                <li>DeepSORT</li>
+                <li>ByteTrack</li>
             </ul>
             <p><strong>Challenges and Resolutions:</strong></p>
             <ul>
                 <li><strong>Object ID Loss:</strong> Implemented a re-identification mechanism with persistent ID tracking.</li>
                 <li><strong>Lag in Real-Time Detection:</strong> Optimized configurations and transitioned to YOLOv11 small.</li>
             </ul>
-            <p><strong>Privacy Considerations:</strong> Ensured anonymization of video data.</p>
         </section>
 
         <section>
-            <h2>4. Scrum Leadership and Project Management</h2>
-            <p><strong>Role of Scrum Master:</strong> Coordinated sprints and facilitated collaboration.</p>
-            <p><strong>Team Dynamics:</strong> Brainstorming sessions and retrospectives improved teamwork.</p>
+            <h2>4. Product Design and Vision</h2>
+            <p>The product design outlines the vision for deployment. It ensures user accessibility and backend scalability, even as final implementation plans evolve.</p>
+            <p><strong>User Side:</strong> Mobile and web applications featuring registration, authentication, camera integration, and real-time alerts.</p>
+            <p><strong>Server Side:</strong> Scalable architecture with middleware, processing servers, and AI-powered models.</p>
+            <div class="visuals">
+                <p>(Image will be placed here)</p>
+                <p>Caption: Product Vision Map.</p>
+            </div>
         </section>
 
         <section>
             <h2>5. Technologies and Tools Used</h2>
             <ul>
                 <li>AI Models: YOLOv11 small/large</li>
-                <li>Programming Frameworks: TensorFlow, PyTorch</li>
-                <li>Tracking Algorithms: Deep SORT, ByteTrack</li>
-                <li>Development Tools: Jupyter Notebook, Docker, GitHub</li>
-                <li>Visualization Tools: Interactive graphs and comparisons</li>
+                <li>Tracking Algorithms: DeepSORT, ByteTrack</li>
+                <li>Tools: GitHub, Visual Studio, Trello, Docker</li>
+                <li>Notification System Integration: Webhooks, API-based notifications</li>
             </ul>
         </section>
 
         <section>
             <h2>6. Notification System Integration</h2>
-            <p><strong>Features:</strong> Smart notification triggers and advanced filtering.</p>
-            <p><strong>Testing:</strong> Simulated theft scenarios validated reliability.</p>
+            <p><strong>Features:</strong> Smart notification triggers and advanced filtering to reduce false positives.</p>
+            <p><strong>Testing:</strong> Simulated theft scenarios validated system reliability.</p>
         </section>
 
         <section>
             <h2>7. Issues Encountered and Solutions</h2>
             <ul>
                 <li><strong>Issue 1:</strong> Object re-identification after ID loss. <strong>Solution:</strong> Persistent ID tracking algorithms.</li>
-                <li><strong>Issue 2:</strong> Lag in real-time detection. <strong>Solution:</strong> Adjusted model configurations.</li>
+                <li><strong>Issue 2:</strong> Lag in real-time detection. <strong>Solution:</strong> Adjusted model configurations and optimized inference times.</li>
             </ul>
         </section>
 
         <section>
             <h2>8. Use Cases and User Scenarios</h2>
-            <p><strong>Potential Applications:</strong> Residential gardens, small businesses.</p>
+            <p><strong>Potential Applications:</strong></p>
+            <ul>
+                <li>Residential gardens</li>
+                <li>Small businesses</li>
+            </ul>
             <p><strong>Example Scenarios:</strong></p>
             <ul>
-                <li>Detecting suspicious lingering near entry points.</li>
-                <li>Alerting on unauthorized object removal.</li>
-                <li>Reducing irrelevant notifications caused by animals or vehicles.</li>
+                <li>Alerting on unauthorized object removal</li>
+                <li>Reducing irrelevant notifications caused by animals or vehicles</li>
             </ul>
         </section>
 
         <section>
             <h2>9. Learning and Reflections</h2>
-            <p>Hands-on experience in evaluating and integrating AI models.</p>
-            <p>Practical exposure to real-world challenges.</p>
+            <p>Practical experience in evaluating and integrating AI models, resolving real-world challenges, and improving teamwork dynamics.</p>
         </section>
 
         <section>
             <h2>10. Next Steps</h2>
-            <p>Refinement of tracking algorithms and further optimization.</p>
-            <p>Testing with diverse datasets to improve robustness.</p>
-        </section>
-
-        <section>
-            <h2>11. References and Data</h2>
-            <p>Further information to be included here as needed.</p>
+            <p>Refine tracking algorithms, test with diverse datasets, and deploy the model for cloud-based beta testing.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Guard Vision Project</p>
     </footer>
 </body>
-</html>
 
