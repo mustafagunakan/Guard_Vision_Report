@@ -84,44 +84,59 @@
             </ul>
             <p><strong>Outcome:</strong> An educational and experimental project designed to address a significant market gap in home security solutions while enhancing team collaboration and technical expertise.</p>
             <div class="visuals">
-                <img src="https://example.com/thumbnail.jpg" alt="Algorithm detecting a possible theft situation and sending alert messages to the user.">
+                <img src="" alt="Algorithm detecting a possible theft situation and sending alert messages to the user.">
                 <p>Caption: Algorithm detecting a possible theft situation and sending alert messages to the user.</p>
             </div>
         </section>
 
+        
         <section>
             <h2>2. Research and Model Assessment</h2>
             <p><strong>Research Phase:</strong> The team evaluated several AI detection models based on visual data to identify the most suitable option.</p>
             <p><strong>Models Tested and Member Contributions:</strong></p>
             <ul>
-                <li>DETR</li>
-                <li>DINO-R50</li>
-                <li>DINO-SwinL</li>
-                <li>YOLOv3/v5/v11</li>
+                <li><strong>DETR:</strong></li>
+                <li><strong>DINO-R50:</strong></li>
+                <li><strong>DINO-SwinL:</strong></li>
+                <li><strong>YOLO V3/V5/V11:</strong></li>
                 <li>Faster R-CNN</li>
                 <li>ATSS</li>
                 <li>RetinaNET</li>
             </ul>
-            <p><strong>Evaluation Metrics:</strong> Speed, Accuracy, and Efficiency.</p>
-            <p><strong>Team Dynamics:</strong> Collaborative reviews and documentation cycles ensured alignment and integration of findings.</p>
+            <p><strong>Evaluation Metrics:</strong></p>
+            <ul>
+                <li><strong>Speed:</strong> How quickly the model processed real-time data.</li>
+                <li><strong>Accuracy:</strong> Precision in detecting objects in low quality video feeds.</li>
+                <li><strong>Efficiency:</strong> Resource usage and feasibility for efficient cloud computing.</li>
+            </ul>
+            <p><strong>Team Dynamics:</strong></p>
+            <ul>
+                <li>Collaborative reviews during group discussions allowed members to share insights and refine the evaluation process.</li>
+                <li>Documentation and feedback cycles ensured alignment and integration of individual findings.</li>
+            </ul>
         </section>
 
-        <section>
+          <section>
             <h2>3. Model Selection and Integration</h2>
-            <p><strong>Chosen Model:</strong> YOLOv11</p>
-            <p><strong>Reason for Selection:</strong> Best balance between speed, accuracy, and efficiency for real-time detection.</p>
+            <p><strong>Chosen Model:</strong> YOLO V11</p>
+            <p><strong>Reason for Selection:</strong> YOLOv11 was chosen for its superior balance of speed, accuracy, and efficiency, making it ideal for real-time object detection in dynamic environments.</p>
             <p><strong>Tracking System Integration:</strong></p>
+            <p>Evaluation of tracking algorithms:</p>
             <ul>
                 <li>SORT</li>
                 <li>DeepSORT</li>
                 <li>ByteTrack</li>
             </ul>
+            <p>The system was integrated with ByteTrack, a highly effective tracking algorithm. ByteTrack was selected for its ability to handle both matched and unmatched detections, ensuring reliable tracking even for low-confidence objects. This robust tracking capability enhances consistency and accuracy in maintaining object identities across frames.</p>
             <p><strong>Challenges and Resolutions:</strong></p>
             <ul>
-                <li><strong>Object ID Loss:</strong> Implemented a re-identification mechanism with persistent ID tracking.</li>
-                <li><strong>Lag in Real-Time Detection:</strong> Optimized configurations to balance speed and accuracy.</li>
+                <li><strong>Object ID Loss:</strong> Challenge: Objects temporarily leaving the frame or encountering occlusions often resulted in new IDs being assigned, complicating theft detection.
+                    Solution: ByteTrack’s advanced mechanisms for handling unmatched detections were utilized to implement a re-identification strategy, ensuring persistent ID tracking even after interruptions.</li>
+                <li><strong>Lag in Real-Time Detection:</strong> Challenge: Initial deployment with YOLOv11 large models caused lag, hindering real-time performance.
+                    Solution: The system was optimized to strike a balance between detection speed and accuracy, ensuring smooth and efficient operation.</li>
             </ul>
         </section>
+
 
         <section>
             <h2>4. Product Design and Vision</h2>
@@ -138,54 +153,108 @@
 
         <section>
             <h2>5. Project Management</h2>
-            <p><strong>Role of Scrum Master:</strong> Coordinated sprints and facilitated collaboration between individual and group tasks.</p>
-            <p><strong>Team Dynamics:</strong> Group activities such as brainstorming sessions and retrospectives improved teamwork and innovation.</p>
-            <p>Role-specific contributions ensured clear accountability and efficient workflows.</p>
-        </section>
-
-        <section>
-            <h2>6. Technologies and Tools Used</h2>
+            <p><strong>Role of Scrum Master:</strong></p>
             <ul>
-                <li><strong>AI Models:</strong> YOLOv11 small/large</li>
-                <li><strong>Tracking Algorithms:</strong> DeepSORT, ByteTrack</li>
-                <li><strong>Tools:</strong> GitHub, Visual Studio, Trello, Discord</li>
-                <li><strong>Notification System Integration:</strong> Webhooks, API-based notifications</li>
+                <li>Coordinated sprints and facilitated collaboration between individual and group tasks.</li>
+                <li>Addressed roadblocks and ensured alignment with project goals.</li>
+                <li>Maintained documentation of progress and resolutions.</li>
+            </ul>
+            <p><strong>Team Dynamics:</strong></p>
+            <ul>
+                <li>Group activities such as brainstorming sessions and retrospectives improved teamwork and innovation.</li>
+                <li>Role-specific contributions ensured clear accountability and efficient workflows.</li>
             </ul>
         </section>
 
+
+          <section>
+            <h2>6. Technologies and Tools Used</h2>
+            <p><strong>AI Models:</strong></p>
+            <ul>
+                <li>YOLOv11 small/large</li>
+                <li>Others tested (DETR, DINO-R50, DINO-SwinL, YOLO V3/V5/V11, Faster R-CNN, ATSS, RetinaNET)</li>
+            </ul>
+            <p><strong>Tracking Algorithms:</strong></p>
+            <ul>
+                <li>Deep SORT</li>
+                <li>ByteTrack</li>
+            </ul>
+            <p><strong>Tools:</strong></p>
+            <ul>
+                <li>GitHub</li>
+                <li>Visual Studio</li>
+                <li>Trello</li>
+                <li>Discord</li>
+            </ul>
+            <p><strong>Notification System Integration:</strong></p>
+            <ul>
+                <li>Webhooks</li>
+                <li>API-based notifications</li>
+            </ul>
+        </section>
+        
         <section>
             <h2>7. Notification System Integration</h2>
-            <p><strong>Features:</strong> Smart notification triggers and advanced filtering to reduce false positives.</p>
-            <p><strong>Testing:</strong> Simulated theft scenarios validated system reliability.</p>
+            <p>Developed an API pipeline to link the AI detection model with a user notification system.</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Smart notification triggers based on theft probability thresholds.</li>
+                <li>Advanced filtering to minimize irrelevant alerts.</li>
+            </ul>
+            <p><strongTestingModule:</strong></p>
+            <ul>
+                <li>Simulated theft scenarios to validate system reliability and accuracy.</li>
+            </ul>
         </section>
-
+        
         <section>
             <h2>8. Use Cases and User Scenarios</h2>
             <p><strong>Potential Applications:</strong></p>
             <ul>
-                <li>Residential gardens</li>
-                <li>Small businesses</li>
+                <li>Residential gardens and front doors</li>
+                <li>Small businesses with outdoor assets</li>
             </ul>
             <p><strong>Example Scenarios:</strong></p>
             <ul>
-                <li>Alerting on unauthorized object removal or theft</li>
-                <li>Reducing irrelevant notifications caused by animals or passing vehicles</li>
+                <li>Alerting on unauthorized object removal or theft.</li>
+                <li>Reducing irrelevant notifications caused by animals or passing vehicles.</li>
             </ul>
-            <p><strong>User Benefits:</strong> Fewer false alarms, leading to increased trust in the system. Real-time notifications ensure timely intervention.</p>
+            <p><strong>User Benefits:</strong></p>
+            <ul>
+                <li>Fewer false alarms, leading to increased trust in the system (compared to traditional motion detection sensors).</li>
+                <li>Real-time notifications ensure timely intervention.</li>
+            </ul>
         </section>
 
+        
         <section>
             <h2>9. Learning and Reflections</h2>
-            <p>Hands-on experience in evaluating and integrating AI models.</p>
-            <p>Practical exposure to resolving real-world challenges in tracking and notifications.</p>
+            <p><strong>Educational Value:</strong></p>
+            <ul>
+                <li>Hands-on experience in evaluating and integrating AI models.</li>
+                <li>Practical exposure to resolving real-world challenges in tracking and notifications.</li>
+                <li>Teamwork dynamics through a mix of individual and collaborative assignments.</li>
+            </ul>
         </section>
-
+        
         <section>
             <h2>10. Next Steps</h2>
-            <p>Refinement of tracking algorithms and further optimization.</p>
-            <p>Testing with diverse datasets to improve robustness.</p>
-            <p>Deploying the model for access via cloud services for beta testing.</p>
+            <p><strong>Refinement of Tracking Algorithms:</strong></p>
+            <ul>
+                <li>Fine-tuning the model with various datasets, including real, augmented, and generated visual data.</li>
+            </ul>
+            <p><strong>Testing:</strong></p>
+            <ul>
+                <li>Testing with diverse datasets to improve robustness.</li>
+            </ul>
+            <p><strong>Scalability and Commercialization:</strong></p>
+            <ul>
+                <li>Refinement of tracking algorithms and further optimization.</li>
+                <li>Exploring future opportunities for scaling and commercialization.</li>
+                <li>Deploying the model for access via cloud services for beta test case usage.</li>
+            </ul>
         </section>
+
     </main>
     <footer>
         <p>&copy; 2025 Guard Vision Project</p>
